@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { searchPets } from '../services/api';
 import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
 const SearchForm = () => {
     const [animal, setAnimal] = useState('');
@@ -32,7 +33,7 @@ const SearchForm = () => {
 
     return (
         <div>
-            <form className='d-flex align-items-center justify-content-center' onSubmit={handleSubmit}>
+            <form className='d-flex align-items-center justify-content-center inputs' onSubmit={handleSubmit}>
                 <input
                     type="text"
                     value={animal}
