@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://pets-v2.dev-apis.com',
+    baseURL: 'https://pets-v2.dev-apis.com',
 });
 
 export const fetchPets = async () => {
